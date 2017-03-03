@@ -1,0 +1,93 @@
+body {
+	background-color: #3291d0;
+	font-family: 'Roboto', sans-serif;
+}
+
+header > img {
+	width: auto;
+	margin: 0 auto;
+}
+
+
+/* STATS ITEMS */
+dl.stats {
+	width: 30%;
+	display: inline-block;
+}
+	/* Add extra space around the middle item */
+	.stats:nth-child(2n) {
+		margin: 0 8px;
+	}
+	dt, dd {
+		display: block;
+	    text-align: center;
+	}
+
+	dt {
+	    font-size: 40px;
+	}
+
+	dd {
+
+	}
+
+
+/* CARDS */
+.card {
+    background-color: white;
+    width: 285px;
+    color: #4593CD;
+    border-radius: 12px;
+    padding: 20px 10px;
+    text-align: center;
+    display: inline-block;
+    margin: 20px;
+}
+	h2 {
+		font-size: 30px;
+		font-weight: 300;
+	}
+
+
+
+
+
+/* BAR CHARTS 
+ *   .bar div holds the overall size of the bar
+ *   .indicator is positioned inside .bar and is colored
+ *		- adjust width of .indicator to create a bar chart
+ *	 	- adjust the color of the chart by adding one of 
+ *		  the following classes to the .indicator div
+ *			- low (green)
+ *			- med (orange)
+ *			- high (red)
+*/
+	.bar, .indicator {
+		height: 50px;
+	}
+	.bar {
+		width: 100%;
+		background-color: #D1D9D4;
+		position: relative;
+		margin: 10px 0;
+	}
+	.indicator {
+		position: absolute;
+		top: 0;
+		left: 0;
+		background-color: #99a09c;
+		width: 10px;
+	}
+	.indicator.low {
+		background-color: green;
+		width: 20%;
+	}
+	.indicator.med {
+		background-color: orange;	
+	}
+	.indicator.high {
+		background-color: red;	
+	}
+
+
+
